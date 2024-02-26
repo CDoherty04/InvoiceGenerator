@@ -6,10 +6,11 @@ import pathlib
 # Get files
 filepaths = glob.glob("invoices/*.xlsx")
 
-# Create a PDF
-document = fpdf.FPDF("P", "mm", "A4")
-
 for filepath in filepaths:
+
+    # Create a PDF
+    document = fpdf.FPDF("P", "mm", "A4")
+
     # Extract data from excel sheets
     df = pd.read_excel(filepath, sheet_name="Sheet 1")
 
@@ -21,5 +22,4 @@ for filepath in filepaths:
     document.add_page()
     document.set_font("Times", "B", 24)
     document.cell(w=5, h=1, txt=f"Invoice {filenum}")
-
-document.output("PDFs/invoice.pdf")
+    document.output(f"PDFs/invoice-{filenum}.pdf")
