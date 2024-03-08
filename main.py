@@ -17,9 +17,14 @@ for filepath in filepaths:
     # Get the file name for naming and indexing
     filename = pathlib.Path(filepath).stem
     filenum = filename.split("-")[0]
+    filedate = filename.split("-")[1]
 
     # Create the output PDF
     document.add_page()
     document.set_font("Times", "B", 24)
-    document.cell(w=5, h=1, txt=f"Invoice {filenum}")
+    document.cell(w=50, h=8, txt=f"Invoice {filenum}", ln=1)
+
+    document.set_font("Times", "", 20)
+    document.cell(w=50, h=8, txt=f"Date: {filedate}")
+
     document.output(f"PDFs/invoice-{filenum}.pdf")

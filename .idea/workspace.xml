@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="508e1a1b-cd14-4b3b-b188-fe6af0deefdb" name="Changes" comment="Create PDF with all content" />
+    <list default="true" id="508e1a1b-cd14-4b3b-b188-fe6af0deefdb" name="Changes" comment="Seperate invoices into different PDFs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,13 +109,22 @@
       <option name="project" value="LOCAL" />
       <updated>1708965150525</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Seperate invoices into different PDFs">
+      <option name="closed" value="true" />
+      <created>1708967412306</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708967412306</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Read Excel File data into a dataframe" />
     <MESSAGE value="Create PDF with all content" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create PDF with all content" />
+    <MESSAGE value="Seperate invoices into different PDFs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Seperate invoices into different PDFs" />
   </component>
 </project>
